@@ -1,0 +1,21 @@
+<div class="container-fluid">
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-md-2">
+    </div>
+
+<div class="col-md-8">
+  {{#each model.questions as |question|}}
+     <!-- <li>{{question.author}} {{question.qst}}</li> -->
+{{question-tile question=question}}
+       {{/each}}
+</div>
+
+<div class="col-md-2">
+</div>
+
+</div>
+</div>
+{{new-question saveQuestion2="saveQuestion3"}}
+</div>

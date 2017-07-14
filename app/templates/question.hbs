@@ -1,0 +1,13 @@
+
+<h2>Detailed question and answers</h2>
+<h3>{{model.qst}}</h3>
+{{update-question question=model update="update"}}
+{{question-details question=model destroyQuestion="destroyQuestion"}}
+<h3>Answers</h3>
+<hr/>
+<ul>
+{{#each model.answers as |answer|}}
+{{answer-tile answer=answer}}
+{{/each}}
+</ul>
+{{new-answer saveAnswer="saveAnswer" question=model}}
