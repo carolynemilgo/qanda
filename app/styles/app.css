@@ -1,8 +1,10 @@
-/*.banner{
-  background-image: url("http://rlaquest.raj.nic.in/Images/questions2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
+body{
 
+font-family: 'Slabo 27px', serif;
 
-}*/
+}
+img{
+  height:100px;
+  width: 90px;
+  opacity: 0.5;
+}

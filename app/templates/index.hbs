@@ -1,21 +1,37 @@
 <div class="container-fluid">
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="col-md-2">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8" id="content">
+        {{#each model.questions as |question|}}
+          <table>
+            <tr>
+              <td class="tag"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf4rBk6ahqj4d6hwXUkc88Hl-bK3NoGz6NDbyjqvJ4YytuO9mv5g"></td>
+              <td>
+                <h4>{{question-tile question=question}}</h4></td>
+              <hr/>
+
+            </tr>
+          </table>
+        {{/each}}
+      </div>
+
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-12" align="center">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        {{new-question saveQuestion2="saveQuestion3"}}
+      </div>
+      <div class="col-md-3"></div>
     </div>
 
-<div class="col-md-8">
-  {{#each model.questions as |question|}}
-     <!-- <li>{{question.author}} {{question.qst}}</li> -->
-{{question-tile question=question}}
-       {{/each}}
-</div>
-
-<div class="col-md-2">
-</div>
-
-</div>
-</div>
-{{new-question saveQuestion2="saveQuestion3"}}
+  </div>
 </div>

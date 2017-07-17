@@ -1,7 +1,21 @@
-# qanda
+# Question and Answer Project
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
+## Developer
+
+Carolyne Milgo
+## Description
+A question and answer message board where a user submits a question and other users can respond with answers
+
+## Specifications
+1. Questions should have the content of the question itself, an author and additional notes.
+2. Answers should have the content of the answer and the author.
+3. Include a header and/or navbar that appears on all pages containing the name of your site and a link to the home page.
+4. List all questions on the homepage, with only the question and the name of the author showing.
+5. Users should be able to click on a question, and be routed to another page containing additional information.
+6. Allow users to add and edit questions.
+7. Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
 
 ## Prerequisites
 
@@ -36,10 +50,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 

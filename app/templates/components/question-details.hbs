@@ -1,12 +1,7 @@
+<!-- component to display the details of the question -->
 
+<p><strong>Question:</strong>{{question.qst}}</p>
+<h5>(<strong>Submitted by:{{question.author}}</strong>)</h5>
+<h5><strong>Notes:</strong>{{question.notes}}</h5>
 
-<h3>Question</h3>
-<h4>{{question.qst}}</h4>
-<h5>Submitted by:{{question.author}}</h5>
-<p>Notes:{{question.notes}}</p>
-<p>Supporting Images:{{question.image}}</p>
-
-
-<!-- {{new-answer saveAnswer="saveAnswer" question=model}} -->
-
-<button class="btn"{{action 'delete' question}}>Delete</button>
+<button class="btn-danger" {{action 'delete' question}}>Delete Question</button>

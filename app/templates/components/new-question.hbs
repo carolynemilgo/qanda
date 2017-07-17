@@ -1,56 +1,32 @@
-<!-- {{#if addNewQuestion}}
-<h4>Fill in the form below to submit a new question</h4>
-<form> -->
-  <!-- <div class="form-group">
-    <label for="question"> Question:</label>
-    {{input value=qst id="qst"}}
-  </div>
-    <div class="form-group">
-    <label for="author"> Author: </label>
-    {{input value=author id="author"}}
-  </div> -->
-  <!-- <div class="form-group">
-  <label for="notes"> Notes: </label>
-  {{input value=notes id="notes"}}
-</div>
-<div class="form-group">
-<label for="image"> image: </label>
-{{input value=image id="image"}}
-</div>
-
-  <button {{action 'saveQuestion1'}}>Save Question</button>
-</form>
-{{else}}
-<button {{action "showQuestionForm"}}>New Question</button>
-{{/if}} -->
-
 {{#if addNewQuestion}}
-  <h1>Fill in the form below to submit a new question</h1>
+  <h4>Fill in the form below to submit a new question</h4>
+  <!-- <div class="row"> -->
+
   <div>
     <form>
       <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author"}}
+        <label for="author">Author</label> {{input value=author id="author" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="qst">Question</label>
-        {{input value=qst id="qst"}}
+        <label for="qst">Question</label> {{input value=qst id="qst" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="notes">Notes</label>
-        {{input value=notes id="notes"}}
+        <label for="notes">Notes</label> {{input value=notes id="notes" class="form-control"}}
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="image">Image</label>
-        {{input value=image id="image"}}
-      </div>
+        {{input value=image id="image" class="form-control"}}
+      </div> -->
 
-          <button class="btn"{{action 'saveQuestion1'}}>Save Question</button>
+      <button class="btn-sucess" {{action 'saveQuestion1'}}>Save Question</button>
     </form>
   </div>
 {{else}}
-  <button class="btn"{{action 'showQuestionForm'}}>New Question</button>
+  <button class="btn-primary" align="center" {{action 'showQuestionForm'}}>New Question</button>
 {{/if}}
+
+
+<!-- </div> -->

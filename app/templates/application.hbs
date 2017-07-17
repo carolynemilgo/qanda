@@ -1,11 +1,35 @@
 <div class="row">
   <div class="col-md-12">
     <div class="">
-      <img src="http://rlaquest.raj.nic.in/Images/questions2.jpg" alt="" class="img-responsive">
     </div>
   </div>
 </div>
 <header>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
 
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            {{#link-to 'index'}}Home {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'about'}}About{{/link-to}}
+          </li>
+          <li><a href="#"></a></li>
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h3 class="display-3" align="center">Q & A</h3>
+      <p class="lead" align="center">This is your one stop site for logging questions and answering other questions which people have posted.</p>
+    </div>
+  </div>
 </header>
 {{outlet}}
