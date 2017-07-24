@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewAnswer: false,
+  addNewAnswer: false, //set form to false
   actions:{
     showAnswerForm(){
-      this.set('addNewAnswer',true);
+      this.set('addNewAnswer',true);//activate form for user to fill the fields
     },
-    saveAnswer(){
+    saveAnswer(){//to collect answers from user and store for access in question details
       var params={
         author:this.get('author'),
         content:this.get('content'),

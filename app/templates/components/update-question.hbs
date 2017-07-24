@@ -21,10 +21,11 @@
         <label for="image">image</label>
         {{input value=image id="image" placeholder=question.image}}
       </div> -->
-      <button class="btn-primary"{{action 'update' question}}>Edit Question</button>
+      <button class="btn btn-info btn-lg"{{action 'update' question}}>Edit Question</button>
 </form>
 </div>
 {{else}}
-<button class="btn-primary"{{action 'updateQuestionForm'}}> Update question</button>
-
+<div>
+  <button class="btn-primary btn-lg"{{action 'updateQuestionForm'}}> Update question</button>
+</div>
 {{/if}}

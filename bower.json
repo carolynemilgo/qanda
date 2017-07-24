@@ -1,0 +1,22 @@
+{
+  "name": "qanda",
+  "description": "Small description for qanda goes here",
+  "main": "",
+  "authors": [
+    "carolynemilgo <carolynemilgo@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sweetalert": "^1.0.1",
+    "sweetalert2": "^6.1.0",
+    "sweetalert": "~1.1.0"
+  }
+}

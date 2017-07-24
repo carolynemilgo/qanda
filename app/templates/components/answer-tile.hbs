@@ -1,4 +1,6 @@
 <li><p>{{answer.content}}</p>
   <p> Answer submitted by:<strong> {{answer.author}}</strong>
-  </p>
+   </p>
+   <button {{action 'up' answer}}>Vote Up</button>
+   <button {{action 'down' answer}}>Vote Down</button>
 </li>

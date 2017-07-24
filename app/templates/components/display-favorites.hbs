@@ -1,0 +1,8 @@
+<!-- template responsible for displaying all the favorite questions that have been selected by the readers and
+is rendered through the route favoriteQuestions -->
+
+<ul>
+{{#each favoriteList.questions as |question|}}
+<li>  {{question.qst}} submitted by <strong>{{question.author}}</strong></li>
+{{/each}}
+</ul>
